@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Accordion from "./component/Accordion";
 import Search from "./component/Search";
 import Dropdown from "./component/Dropdown";
+import Translate from "./component/Translate";
+
 const items = [
   {
     title: "What is React?",
@@ -37,11 +39,13 @@ function App() {
     <div>
       {/* <Accordion items={items} /> */}
       {/* <Search /> */}
-      <Dropdown
-        selected={selected}
-        onSelectedChange={setSelected}
-        options={options}
-      />
+      {/* <Dropdown
+      label='Select a Color'
+          selected={selected}
+          onSelectedChange={setSelected}
+          options={options}
+        /> */}
+      <Translate />)
     </div>
   );
 }
